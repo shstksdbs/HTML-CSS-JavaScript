@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자</title>
+    <style>
+        /* Do it! 라디오 버튼을 클릭했을 때 label 스타일 지정하기 */
+        #signup input:checked+label {
+            color: red;
+            /* 글자색 */
+            font-weight: bold;
+            /* 글자 굵게 */
+        }
+    </style>
+</head>
+<body>
+    <form id="signup">
+        <ul>
+            <li>
+                <input type="radio" name="room" id="basic">
+                <label for="basic">기본형(최대 2인)</label>
+            <li>
+            <li>
+                <input type="radio" name="room" id="family">
+                <label for="family">가족형(최대 8인)</label>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
